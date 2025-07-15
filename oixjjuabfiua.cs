@@ -32,7 +32,7 @@ public class SillyMonke : MonoBehaviour
 
         PlayFabClientAPI.GetTitleData(new GetTitleDataRequest
         {
-            Keys = new List<string> { "AllowedUsers", "rau" }
+            Keys = new List<string> { "AllowedUsers", "RW" }
         }, r =>
         {
             string a = r.Data.TryGetValue("AllowedUsers", out var v1) ? v1 : "";
