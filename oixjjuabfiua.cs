@@ -8,6 +8,12 @@ using System.Net.Http;
 using System.Text;
 using System;
 
+/*
+ THIS GAME IS PROTECTED BY SONOTCLOSE'S ANTI PCVR
+ IF U FUCK UP OR DELETE THIS SCRIPT THERES OTHERS
+ SO NOT EVEN TRY
+*/
+
 public class SillyMonke : MonoBehaviour
 {
     bool free = false;
@@ -30,7 +36,7 @@ public class SillyMonke : MonoBehaviour
         }, r =>
         {
             string a = r.Data.TryGetValue("AllowedUsers", out var v1) ? v1 : "";
-            string w = r.Data.TryGetValue("rau", out var v2) ? v2 : "";
+            string w = r.Data.TryGetValue("RW", out var v2) ? v2 : "";
             string[] l = a.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
             string n = u.ToLower().Trim();
             bool m = Array.Exists(l, x => x.ToLower().Trim() == n);
